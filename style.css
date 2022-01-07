@@ -1,0 +1,123 @@
+body{
+    background-color: yellow;
+}
+.ol{
+    list-style-type: decimal;
+    position: relative;
+    left: 32%;
+    margin-top: 100px;
+}
+.box{
+    border: 2px solid blue;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.box1{
+    background: blue;
+   animation-name: skew;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+@keyframes skew{
+    0%{
+        transform: skewX(20deg);
+    }
+    50%{
+        transform: skewX(-20deg);
+    }
+    100%{
+        transform: skewX(20deg);
+    }
+}
+.box2{
+    background: gray;
+    animation-name: sh;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 4s; */
+}
+@keyframes sh{
+    0%{
+        transform: skewX(30deg);
+    }
+    50%{
+        transform: skewX(-30deg);
+    }
+    100%{
+        transform: skewX(30deg);
+    }
+}
+
+.box3{
+    background: lightblue;
+    animation: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box4{
+    background: lightcoral;
+    animation: ro;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes ro{
+    0%{
+        transform: rotatex(0deg);
+    }
+    50%{
+        transform: rotatex(55deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+.box5{
+    background: lightcyan;
+    animation: ta;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes ta{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(60deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+.box6{
+    background: green;
+    animation: te;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes te{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotatez(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}

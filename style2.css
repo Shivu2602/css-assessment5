@@ -1,0 +1,76 @@
+body{
+    background: greenyellow;
+    margin: 0%;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.ol{
+    
+    list-style-type: decimal;
+    position: relative;
+    left: 44%;
+    /* margin-top:100px; */
+}
+.box{
+    display: inline-block;
+    border: 2px solid red;
+    width: 100px;
+    height: 64px;
+    background-color: green;
+}
+.box1{
+    transition: width 3s;
+}
+.box1:hover{
+       width:300px
+}
+.box2{
+    transition: width 3s, height 3s;
+}
+.box2:hover{
+    width: 300px;
+    height: 300px;
+}
+.box3{
+    transition: width 3s;
+    transition-timing-function: linear;
+}
+.box3:hover{
+    width:300px;
+}
+.box4{
+    transition: width 3s;
+    transition-timing-function: ease;
+}
+.box4:hover{
+    width: 300px;
+}
+.box5{
+    transition: width 3s;
+    transition-timing-function: ease-in;
+}
+.box5:hover{
+    width:300px;
+}
+.box6{
+    transition: width 3s;
+    transition-timing-function: ease-out;
+}
+.box6:hover{
+    width:300px;
+}
+.box7{
+    transition: width 3s;
+    transition-timing-function: ease-in-out;
+}
+.box:hover{
+     width:300px;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
